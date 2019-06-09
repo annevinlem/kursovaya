@@ -5,7 +5,7 @@ require_once '../helpers/functions.php';
 
 if (isset($_POST['doctor_id']))
 {
-    $link = mysqli_connect($host, $user, $password, $db_name);
+    $link = mysqli_connect($host, $user, $password, $db_name);mysqli_query($link, "SET NAMES utf8");
 
     $doctor_id = $_POST['doctor_id'];
     $active = $_POST['active'];

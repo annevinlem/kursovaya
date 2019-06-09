@@ -3,7 +3,7 @@
 require_once '../connection.php';
 require_once '../helpers/functions.php';
 
-$link = mysqli_connect($host, $user, $password, $db_name);
+$link = mysqli_connect($host, $user, $password, $db_name);mysqli_query($link, "SET NAMES utf8");
 
 $cabinets_query = mysqli_query($link, "SELECT * FROM User WHERE role_id = 2") or die(mysqli_error($link));
 $cabinets = queryToArray($cabinets_query);

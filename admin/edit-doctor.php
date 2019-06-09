@@ -6,7 +6,7 @@ session_start();
 if (isset($_SESSION['auth']))
 {
     $user_id = $_SESSION['id'];
-    $link = mysqli_connect($host, $user, $password, $db_name);
+    $link = mysqli_connect($host, $user, $password, $db_name);mysqli_query($link, "SET NAMES utf8");
 
     $query = "SELECT * FROM user WHERE id = '$user_id'";
     $result = mysqli_query($link, $query);

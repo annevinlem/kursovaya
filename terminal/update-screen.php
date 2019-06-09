@@ -15,7 +15,7 @@ if (isset($_POST['doctor_id']))
 
     $return_html = '';
 
-    $link = mysqli_connect($host, $user, $password, $db_name);
+    $link = mysqli_connect($host, $user, $password, $db_name);mysqli_query($link, "SET NAMES utf8");
     $doctor = mysqli_query($link, "SELECT * FROM User WHERE id = " . $doctor_id)->fetch_assoc() or die(mysqli_error($link));
 
     if ($doctor['active'] == 1)

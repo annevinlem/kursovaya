@@ -9,7 +9,7 @@ if (isset($_GET['doctor-id']))
     $num = null;
     $people_in_queue = 0;
 
-    $link = mysqli_connect($host, $user, $password, $db_name);
+    $link = mysqli_connect($host, $user, $password, $db_name);mysqli_query($link, "SET NAMES utf8");
     $doctor = mysqli_query($link, "SELECT * FROM User WHERE id = " . $doctor_id)->fetch_assoc() or die(mysqli_error($link));
 
     $last_in_queue = mysqli_query($link, "SELECT * FROM Queue WHERE status_id = 1 AND doctor_id = " . $doctor_id . " ORDER BY id DESC ") or die(mysqli_error($link));

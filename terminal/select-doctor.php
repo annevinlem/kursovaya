@@ -2,7 +2,7 @@
 
 require_once '../connection.php';
 
-$link = mysqli_connect($host, $user, $password, $db_name);
+$link = mysqli_connect($host, $user, $password, $db_name);mysqli_query($link, "SET NAMES utf8");
 
 $doctors = mysqli_query($link, "SELECT * FROM User WHERE role_id = 2 AND active = 1") or die(mysqli_error($link));
 

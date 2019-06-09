@@ -6,7 +6,7 @@ $error = [];
 
 if (!empty($_REQUEST['password']) and !empty($_REQUEST['login']))
 {
-    $link = mysqli_connect($host, $user, $password, $db_name);
+    $link = mysqli_connect($host, $user, $password, $db_name);mysqli_query($link, "SET NAMES utf8");
 
     //Пишем логин и пароль из формы в переменные (для удобства работы):
     $login = $_REQUEST['login'];
