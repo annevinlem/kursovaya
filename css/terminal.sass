@@ -1,0 +1,114 @@
+html, body
+  height: 100%
+  margin: 0
+  padding: 0
+  overflow: hidden
+
+body
+  overflow: auto
+  background: #f7f7f7
+  color: #323232
+  line-height: 1.2
+  font-family: arial, verdana, sans-serif
+
+a
+  text-decoration: none
+  color: inherit
+  &:hover
+    text-decoration: none
+    color: inherit
+  &:focus
+    text-decoration: none
+    color: inherit
+  &:visited
+    text-decoration: none
+    color: inherit
+  &:active
+    text-decoration: none
+    color: inherit
+
+//Стили для страниц терминала
+
+.terminal-page
+  padding-top: 100px
+  .header
+    .title
+      font-size: 40px
+      text-align: center
+      margin-bottom: 20px
+  .select
+    margin-bottom: 30px
+    .item
+      background: #fff
+      border-radius: 10px
+      overflow: hidden
+      box-shadow: 0 2px 6px rgba(50,50,90,.1)
+      padding: 40px 30px
+      transition: all 0.1s ease-in-out
+      margin-bottom: 15px
+      &:hover
+        transform: scale(1.02)
+      .name
+        color: #323232
+        font-size: 23px
+        font-weight: 300
+      .desc
+        display: block
+  .action
+    .item
+      background: #fff
+      border-radius: 10px
+      overflow: hidden
+      box-shadow: 0 2px 6px rgba(50,50,90,.1)
+      transition: all 0.1s ease-in-out
+      margin-bottom: 15px
+      &:hover
+        transform: scale(1.02)
+      .name
+        display: block
+        text-align: center
+        padding: 40px 30px
+        color: #323232
+        font-size: 23px
+        font-weight: 300
+  .terminal-print-talon
+    width: 500px
+    height: 500px
+    margin: 0 auto
+    background: #fff
+    border-radius: 10px
+    box-shadow: 0 2px 6px rgba(50,50,90,.1)
+    text-align: center
+    .number
+      font-size: 100px
+      padding-top: 60px
+      margin-bottom: 0
+      display: block
+    .desc
+      font-size: 24px
+    .cabinet
+      font-size: 20px
+      margin-top: 40px
+    .date
+      margin-top: 20px
+    .queue-info
+      margin-top: 5px
+  .terminal-screen
+    margin-top: 100px
+    text-align: center
+    .cabinet-info
+      margin-bottom: 30px
+      font-size: 24px
+    .queue-info
+      .waiting
+        .desc
+          font-size: 30px
+        .num
+          font-size: 200px
+          margin: 0px
+      .in-process
+        font-size: 100px
+        color: limegreen
+      .not-active
+        font-size: 100px
+        color: tomato

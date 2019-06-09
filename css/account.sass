@@ -1,0 +1,314 @@
+html, body
+  height: 100%
+  margin: 0
+  padding: 0
+  overflow: hidden
+
+body
+  overflow: auto
+  background: #f7f7f7
+  color: #323232
+  line-height: 1.2
+  font-family: arial, verdana, sans-serif
+
+a
+  text-decoration: none
+  color: inherit
+  &:hover
+    text-decoration: none
+    color: inherit
+  &:focus
+    text-decoration: none
+    color: inherit
+  &:visited
+    text-decoration: none
+    color: inherit
+  &:active
+    text-decoration: none
+    color: inherit
+
+.account
+  .header
+    height: 60px
+    background: #ffffff
+    line-height: 60px
+    box-shadow: 0 0 10px rgba(#000, .05)
+    .logo
+      float: left
+    .links
+      float: right
+      ul
+        list-style: none
+        li
+          float: left
+          margin-left: 30px
+          a
+            text-decoration: underline
+  .user-info
+    background: #f0f0f0
+    padding: 60px 0
+    .name
+      font-size: 30px
+      display: block
+      margin-bottom: 15px
+    .specialization
+      display: block
+      float: left
+      font-size: 14px
+      padding: 6px 10px
+      background: rgba(#000, .3)
+      border-radius: 6px
+      color: #fff
+      margin-right: 10px
+    .cabinet
+      display: block
+      float: left
+      font-size: 14px
+      padding: 6px 10px
+      background: rgba(#000, .3)
+      border-radius: 6px
+      color: #fff
+      margin-right: 10px
+  .doctor-index
+    margin-top: 60px
+    .section-header
+      .title
+        font-size: 30px
+        margin-bottom: 0
+    .queue-list
+      margin-top: 30px
+      .item
+        height: 60px
+        padding: 0 30px
+        background: #fff
+        border-radius: 6px
+        box-shadow: 0 2px 6px rgba(50, 50, 90, .1)
+        margin-bottom: 15px
+        .talon-number
+          display: block
+          float: left
+          line-height: 60px
+          margin-right: 30px
+          font-weight: 600
+        .status
+          display: block
+          float: left
+          line-height: 60px
+          margin-right: 30px
+          color: rgba(#000, .7)
+        .action
+          float: right
+          margin-top: 16px
+          &.block
+            span
+              background: rgba(#000, .2) !important
+          span
+            cursor: pointer
+            float: left
+            padding: 6px 10px
+            border-radius: 6px
+            margin-left: 10px
+            &.invite
+              background: #24b31d
+              color: #fff
+            &.end
+              background: #3191cb
+              color: #fff
+            &.not_come
+              background: tomato
+              color: #fff
+            &.come
+              background: #24b31d
+              color: #fff
+  .admin-index
+    margin-top: 60px
+    .section-header
+      .title
+        font-size: 30px
+        margin-bottom: 0
+      .header-action
+        margin-top: 10px
+        a
+          display: block
+          float: left
+          padding: 6px 10px
+          margin-right: 10px
+          border-radius: 6px
+          &.add
+            background: #24b31d
+            color: #fff
+    .doctor-list
+      margin-top: 30px
+      .item
+        padding: 20px 30px
+        background: #fff
+        border-radius: 6px
+        box-shadow: 0 2px 6px rgba(50, 50, 90, .1)
+        margin-bottom: 15px
+        .doctor-info
+          float: left
+          .name
+            font-weight: 600
+            display: block
+            margin-bottom: 3px
+          .specialization
+            font-size: 14px
+            margin-right: 10px
+        .action
+          float: right
+          margin-top: 4px
+          a
+            display: block
+            float: right
+            margin-left: 10px
+            padding: 6px 10px
+            border-radius: 6px
+            &.open
+              background: #24b31d
+              color: #fff
+            &.delete
+              background: tomato
+              color: #fff
+  .admin-view-doctor
+    margin-top: 60px
+    .section-header
+      .title
+        font-size: 30px
+        margin-bottom: 0
+      .header-action
+        margin-top: 10px
+        a
+          display: block
+          float: left
+          padding: 6px 10px
+          margin-right: 10px
+          border-radius: 6px
+          &.no-active
+            background: tomato
+            color: #fff
+          &.active
+            background: #24b31d
+            color: #fff
+          &.edit
+            background: dodgerblue
+            color: #fff
+          &.back
+            background: rgba(#000, .5)
+            color: #fff
+    .doctor-queue-info
+      margin-top: 30px
+      .item
+        height: 60px
+        padding: 0 30px
+        background: #fff
+        border-radius: 6px
+        box-shadow: 0 2px 6px rgba(50, 50, 90, .1)
+        margin-bottom: 15px
+        .talon-number
+          display: block
+          float: left
+          line-height: 60px
+          margin-right: 30px
+          font-weight: 600
+        .status
+          display: block
+          float: left
+          line-height: 60px
+          margin-right: 30px
+          color: rgba(#000, .7)
+        .action
+          float: right
+          margin-top: 16px
+          &.block
+            span
+              background: rgba(#000, .2) !important
+          span
+            cursor: pointer
+            float: left
+            padding: 6px 10px
+            border-radius: 6px
+            margin-left: 10px
+            &.invite
+              background: #24b31d
+              color: #fff
+            &.end
+              background: #3191cb
+              color: #fff
+            &.not_come
+              background: tomato
+              color: #fff
+            &.come
+              background: #24b31d
+              color: #fff
+  .admin-add-doctor
+    margin-top: 60px
+    .section-header
+      .title
+        font-size: 30px
+        margin-bottom: 0
+      .header-action
+        margin-top: 10px
+        a
+          display: block
+          float: left
+          padding: 6px 10px
+          margin-right: 10px
+          border-radius: 6px
+          &.edit
+            background: dodgerblue
+            color: #fff
+          &.back
+            background: rgba(#000, .5)
+            color: #fff
+    .doctor-form
+      margin-top: 30px
+      input[type="text"]
+        display: block
+        margin-bottom: 10px
+        padding: 8px 10px
+        border-radius: 6px
+        border: 1px solid rgba(#000, .2)
+        width: 100%
+      input[type="submit"]
+        padding: 6px 10px
+        border-radius: 6px
+        background: #24b31d
+        color: #fff
+        border: none
+        outline: none
+  .admin-edit-doctor
+    margin-top: 60px
+    .section-header
+      .title
+        font-size: 30px
+        margin-bottom: 0
+      .header-action
+        margin-top: 10px
+        a
+          display: block
+          float: left
+          padding: 6px 10px
+          margin-right: 10px
+          border-radius: 6px
+          &.back
+            background: rgba(#000, .5)
+            color: #fff
+    .doctor-form
+      margin-top: 30px
+      label
+        display: block
+        margin-bottom: 5px
+      input[type="text"]
+        display: block
+        margin-bottom: 20px
+        padding: 8px 10px
+        border-radius: 6px
+        border: 1px solid rgba(#000, .2)
+        width: 100%
+      input[type="submit"]
+        padding: 6px 10px
+        border-radius: 6px
+        background: #24b31d
+        color: #fff
+        border: none
+        outline: none

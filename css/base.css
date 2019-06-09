@@ -1,0 +1,30 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden; }
+
+body {
+  overflow: auto;
+  background: #f7f7f7;
+  color: #323232;
+  line-height: 1.2;
+  font-family: arial, verdana, sans-serif; }
+
+a {
+  text-decoration: none;
+  color: inherit; }
+  a:hover {
+    text-decoration: none;
+    color: inherit; }
+  a:focus {
+    text-decoration: none;
+    color: inherit; }
+  a:visited {
+    text-decoration: none;
+    color: inherit; }
+  a:active {
+    text-decoration: none;
+    color: inherit; }
+
+/*# sourceMappingURL=base.css.map */
